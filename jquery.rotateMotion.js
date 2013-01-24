@@ -108,7 +108,7 @@ $.fn.rotateMotion=function(w,h,tileSize,tileNum,delay,imgPath){
 				});
 			});
 		});
-		liStack.eq(liStack.length()-1).one('webkitTransitionEnd',function(){
+		liStack.eq(liStack.length-1).one('webkitTransitionEnd',function(){
 			$('#start').show();	
 			turnFlag=true;
 		});
